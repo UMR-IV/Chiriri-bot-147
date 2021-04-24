@@ -3,7 +3,7 @@ const client = new Discord.Client()
 
 
 client.on('ready', () =>{
-    console.log('Chiriri online!')
+    console.log('Chiriri is online!')
 })
 
 client.login(process.env.DJS_TOKEN)
