@@ -29,7 +29,7 @@ client.on('message', message =>{
          message.react('<a:UMRPat:805597149509320734>')
         
     } else if(command == 'youtube'){                                        //change message input here
-            if(message.member.roles.cache.has('664063399092813834')){
+            if(message.member.roles.cache.has('664063399092813834'){
                 message.channel.send('https://cdn.discordapp.com/attachments/792676622939455512/806168433749131344/Wife2.mp4')
             } else if(message.member.roles.cache.has('769820874353147944')){
                 message.channel.send('https://cdn.discordapp.com/attachments/792676622939455512/806168433749131344/Wife2.mp4')
