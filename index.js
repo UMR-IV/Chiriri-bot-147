@@ -17,7 +17,7 @@ client.on('ready', () =>{
     command(client, 'help', message =>{
         let embed = new Discord.MessageEmbed()
          .setTitle("Commands [%]")
-         .setDescription("- help           (list the commands)\r\n- ping/test________(for testing purpose)\r\n- status__________(to change the status display for the bot)\r\n- servers_________(display the number of members in the servers)\r\n- cc/clearchannel_(clearing the whole messages in the channel *only for messsages that are not exeeded 14 days)")
+         .setDescription("- help           (list the commands)\r\n- ping/test (for testing purpose)\r\n- status (to change the status display for the bot)\r\n- servers (display the number of members in the servers)\r\n- cc/clearchannel (clearing the whole messages in the channel *only for messsages that are not exeeded 14 days)")
          .setColor("BLUE")
          .setFooter("Author: UMR_IV   Latest update: 25/4/2021")
          message.channel.send(embed)
