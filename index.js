@@ -8,15 +8,16 @@ client.on('ready', () =>{
     console.log('Chiriri is online!')
 
     welcome(client)
-   
+    
     command(client, ['ping', 'test'], message =>{
         message.channel.send(`${message.author.toString()} Pong!`)
+        message.react('<a:UMRPat:805597149509320734>')
     })
 
     command(client, 'help', message =>{
         let embed = new Discord.MessageEmbed()
          .setTitle("Commands")
-         .setDescription("-help\r\n-ping/test\r\n-status\r\n-servers\r\n-cc/clearchannel")//`${message.author.toString()} you are about to be banned`)
+         .setDescription("%help\r\n%ping/test\r\n%status\r\n%servers\r\n%cc/clearchannel")
          .setColor("BLUE")
          .setFooter("Author: UMR_IV   Latest update: 25/4/2021")
          message.channel.send(embed)
