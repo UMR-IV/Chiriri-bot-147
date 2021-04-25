@@ -3,7 +3,7 @@ module.exports = client => {
     const channelID = "835444751494807593" //testing channel
 
 
-    client.on('GuildMemberAdd', member =>{
+    client.on('GuildMemberAdd', (member) =>{
         console.log(member)
     })
 
