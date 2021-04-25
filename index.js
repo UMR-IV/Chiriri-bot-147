@@ -2,16 +2,16 @@ const Discord = require('discord.js')
 const client = new Discord.Client()
 
 const command = require('./command')
-
-
-
+const welcome = require('./welcome')
 //=============================================
 client.on('ready', () =>{
     console.log('Chiriri is online!')
 
+    welcome(client)
+
     command(client, ['ping', 'test'], message =>{
-        message.channel.send(`${message.author.toString()} Pong! <a:poyoyoEating:833149072546332712>`)
-        message.react('<a:UMRPat:805597149509320734>')
+        message.channel.send(`${message.author.toString()} Pong!`)
+        message.console.log(channelID)
     })
 
     command(client, 'help', message =>{
