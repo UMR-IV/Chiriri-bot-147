@@ -31,4 +31,4 @@ client.on('ready', () =>{
 
 //=============================================
 client.login(process.env.DJS_TOKEN)
- 
+
