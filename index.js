@@ -12,7 +12,7 @@ client.on('ready', () =>{
     })
 
     command(client, 'servers', message =>{
-        client.guild.cache.forEach(guild =>{
+        client.guilds.cache.forEach(guild =>{
             message.channel.send(`${guild.name} has a total of ${guild.memberCount} members`)
         })
     })
