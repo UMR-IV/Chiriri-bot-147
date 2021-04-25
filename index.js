@@ -18,7 +18,7 @@ client.on('ready', () =>{
          .setTitle("Commands")
          .setDescription("-help\r\n-ping/test\r\n-status\r\n-servers\r\n-cc/clearchannel")//`${message.author.toString()} you are about to be banned`)
          .setColor("BLUE")
-         .setFooter("Commence project at: 10/4/2021")
+         .setFooter("Author: UMR_IV   Latest update: 25/4/2021")
          message.channel.send(embed)
     })
 
