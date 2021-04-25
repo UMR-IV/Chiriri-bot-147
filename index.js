@@ -6,7 +6,7 @@ const welcome = require('./welcome')
 //=============================================
 client.on('ready', () =>{
     console.log('Chiriri is online!')
-    console.log(channelID)
+
     welcome(client)
 
     command(client, ['ping', 'test'], message =>{
