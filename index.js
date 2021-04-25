@@ -3,12 +3,23 @@ const client = new Discord.Client()
 
 const command = require('./command')
 
+
+
 //=============================================
 client.on('ready', () =>{
     console.log('Chiriri is online!')
 
     command(client, ['ping', 'test'], message =>{
         message.channel.send('Pong!')
+    })
+
+    command(client, 'help', message =>{
+        let embed = new Discord.MessageEmbed()
+         .setTitle("Youtube Topics")
+         .setDescription("-Arduino\r\n-Python\r\n-Unity\r\n-日本語\r\n-Gaming")//`${message.author.toString()} you are about to be banned`)
+         .setColor("BLUE")
+         .setFooter("Commence project at: 10/4/2021")
+         message.channel.send(embed)
     })
 
     command(client, 'servers', message =>{
@@ -31,7 +42,7 @@ client.on('ready', () =>{
         client.user.setPresence({
             activity: {
                 name: content,
-                type: 1,
+                type:0,
             },
         })
     })
