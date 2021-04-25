@@ -31,7 +31,7 @@ client.on('ready', () =>{
         client.user.setPresence({
             activity: {
                 name: content,
-                type: 0,
+                type: 1,
             },
         })
     })
