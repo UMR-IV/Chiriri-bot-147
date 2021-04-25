@@ -11,7 +11,7 @@ client.on('ready', () =>{
 
     command(client, ['ping', 'test'], message =>{
         message.channel.send(`${message.author.toString()} Pong!`)
-        message.console.log(channelID)
+        console.log(channelID)
     })
 
     command(client, 'help', message =>{
