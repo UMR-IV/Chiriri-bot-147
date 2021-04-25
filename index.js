@@ -15,8 +15,8 @@ client.on('ready', () =>{
 
     command(client, 'help', message =>{
         let embed = new Discord.MessageEmbed()
-         .setTitle("Youtube Topics")
-         .setDescription("-Arduino\r\n-Python\r\n-Unity\r\n-日本語\r\n-Gaming")//`${message.author.toString()} you are about to be banned`)
+         .setTitle("Commands")
+         .setDescription("-help\r\n-ping/test\r\n-status\r\n-servers\r\n-cc/clearchannel")//`${message.author.toString()} you are about to be banned`)
          .setColor("BLUE")
          .setFooter("Commence project at: 10/4/2021")
          message.channel.send(embed)
