@@ -10,7 +10,7 @@ client.on('ready', () =>{
     console.log('Chiriri is online!')
 
     command(client, ['ping', 'test'], message =>{
-        message.channel.send(`${message.author.toString()} Pong! <a:WavyNanaYay:795365605146492979>`)
+        message.channel.send(`${message.author.toString()} Pong! <a:poyoyoEating:833149072546332712>`)
         message.react('<a:UMRPat:805597149509320734>')
     })
 
