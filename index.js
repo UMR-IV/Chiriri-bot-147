@@ -16,6 +16,14 @@ client.on('ready', () =>{
             message.channel.send(`${guild.name} has a total of ${guild.memberCount} members`)
         })
     })
+
+    command(client, ['cc', 'clearchannel'], message =>{
+        if (message.member.hasPermission('ADMINISTRATOR')){
+            message.channel.message.fetch().then(results =>{
+                console.log(results)
+            })
+        }
+    })
 })
 //=============================================
 
