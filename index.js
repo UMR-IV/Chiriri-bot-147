@@ -8,7 +8,7 @@ client.on('ready', () =>{
     console.log('Chiriri is online!')
 
     welcome(client)
-    /*
+   
     command(client, ['ping', 'test'], message =>{
         message.channel.send(`${message.author.toString()} Pong!`)
     })
@@ -45,7 +45,7 @@ client.on('ready', () =>{
                 type:0,
             },
         })
-    })*/
+    })
 })
 
 //=============================================
