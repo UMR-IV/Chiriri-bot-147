@@ -11,7 +11,6 @@ client.on('ready', () =>{
     
     command(client, ['ping', 'test'], message =>{
         message.react('<a:UMRPat:805597149509320734>')
-        message.channel.send(`${message.author.toString()} Pong!`)
     })
 
     command(client, 'help', message =>{
