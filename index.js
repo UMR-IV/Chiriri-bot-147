@@ -10,7 +10,7 @@ client.on('ready', () =>{
     welcome(client)
     
     command(client, ['ping', 'test'], message =>{
-        message.channel.send(`${message.author.toString()} Pong!`)
+        message.channel.send(`${message.author.toString()} Pong! <@664063399092813834>`)
         message.react('<a:UMRPat:805597149509320734>')
     })
 
