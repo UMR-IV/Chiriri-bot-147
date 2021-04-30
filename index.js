@@ -11,7 +11,6 @@ client.on('ready', () =>{
     
     command(client, ['ping', 'test'], message =>{
         message.react('<a:UMRPat:805597149509320734>')
-        message.channel.send(`I'll ping <@664063399092813834> for you`)
     })
 
     command(client, 'help', message =>{
