@@ -26,7 +26,7 @@ client.on('ready', () =>{
         command(client, 'rules', message =>{
         let embed = new Discord.MessageEmbed() 
          .setTitle("Server Rules")
-         .setDescription(""**#1 Be mature and polite.**\r\nTreat everybody with respect regardless of race, religion, where they live, etc. Do not discriminate against others.\r\n\r\n**#2 Respect each others views and opinions.**\r\nDo not attack others for not sharing the same opinion and do not force your views on them.\r\n\r\n**#3 Have fun**")
+         .setDescription("**#1 Be mature and polite.**\r\nRespect everybody regardless of race, religion, where they live, etc. Do not discriminate against others.\r\n\r\n**#2 Respect each others views and opinions.**\r\nDo not attack others for not sharing the same opinion and do not force your views on them.\r\n\r\n**#3 Have fun**")
          .setColor("BLUE")
          .setFooter("")
          message.channel.send(embed)
