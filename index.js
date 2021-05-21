@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
 
-const command = require('./command')  
+const command = require('./command')  //hjgjghgh
 const welcome = require('./welcome')
 //=============================================
 client.on('ready', () =>{
