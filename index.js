@@ -15,11 +15,20 @@ client.on('ready', () =>{
     })
 
     command(client, 'help', message =>{
-        let embed = new Discord.MessageEmbed()
+         let embed = new Discord.MessageEmbed()
          .setTitle("Commands [%]")
          .setDescription("- help\r\n(list the commands)\r\n- ping/test\r\n(for testing purpose)\r\n- status\r\n(to change the status display for the bot)\r\n- servers\r\n(display the number of members in the servers)\r\n- cc/clearchannel\r\n(clearing the whole messages in the channel *only for messsages that are not exeeded 14 days)")
          .setColor("BLUE")
          .setFooter("Author: UMR_IV   Latest update: 25/4/2021")
+         message.channel.send(embed)
+    })
+    
+        command(client, 'rules', message =>{
+        let embed = new Discord.MessageEmbed()
+         .setTitle("Server Rules")
+         .setDescription(""**#1 Be mature and polite.**\r\nTreat everybody with respect regardless of race, religion, where they live, etc. Do not discriminate against others.\r\n\r\n**#2 Respect each others views and opinions.**\r\nDo not attack others for not sharing the same opinion and do not force your views on them.\r\n\r\n**#3 Have fun**")
+         .setColor("BLUE")
+         .setFooter("")
          message.channel.send(embed)
     })
 
