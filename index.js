@@ -11,7 +11,7 @@ client.on('ready', () =>{
     
     command(client, ['ping', 'test'], message =>{
         message.channel.send(`${message.author.toString()} Pong!`)
-        message.react(':laughing:')
+        message.react(':smile:')
     })
 
     command(client, 'help', message =>{
