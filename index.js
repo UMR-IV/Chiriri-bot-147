@@ -11,7 +11,7 @@ client.on('ready', () =>{
     
     command(client, ['ping', 'test'], message =>{
         message.channel.send(`${message.author.toString()} Pong!`)
-        message.channel.send('<a:madokaWaveHyper:817183891789578341>')
+        message.react(':laughing:')
     })
 
     command(client, 'help', message =>{
