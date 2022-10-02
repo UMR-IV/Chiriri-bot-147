@@ -5,7 +5,7 @@ const command = require('./command.js')
 const welcome = require('./welcome.js')
 //=============================================
 client.on('ready', () =>{
-    console.log('Chiriri is online!')
+    console.log('Chiriri is online lah!')
 
     welcome(client)
     
