@@ -1,8 +1,8 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
 
-const command = require('./command')  
-const welcome = require('./welcome')
+const command = require('./command.js')  
+const welcome = require('./welcome.js')
 //=============================================
 client.on('ready', () =>{
     console.log('Chiriri is online!')
