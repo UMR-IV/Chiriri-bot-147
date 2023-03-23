@@ -6,10 +6,10 @@ const welcome = require('./welcome.js')
 //=============================================
 client.on('ready', () =>{
     console.log('Nice, Chiriri is online!')
-
-    //welcome(client)
     })
     
+    welcome(client)
+
     command(client, ['ping', 'test', 'try'], message =>{
         message.channel.send(`${message.author.toString()} Pong!`)
         message.react('😄')
