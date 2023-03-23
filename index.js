@@ -8,12 +8,12 @@ client.on('ready', () =>{
     console.log('Nice, Chiriri is online!')
 
     welcome(client)
+    })
     
     command(client, ['ping', 'test', 'try'], message =>{
         message.channel.send(`${message.author.toString()} Pong!`)
         message.react('😄')
-    })
-
+        
     command(client, 'help', message =>{
          let embed = new Discord.MessageEmbed()
          .setTitle("Commands [%]")
