@@ -9,7 +9,7 @@ client.on('ready', () =>{
 
     welcome(client)
     
-    command(client, ['ping', 'test'], message =>{
+    command(client, ['ping', 'test', 'try'], message =>{
         message.channel.send(`${message.author.toString()} Pong!`)
         message.react('😄')
     })
