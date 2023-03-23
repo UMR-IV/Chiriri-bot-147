@@ -7,7 +7,7 @@ const welcome = require('./welcome.js')
 client.on('ready', () =>{
     console.log('Nice, Chiriri is online!')
 
-    welcome(client)
+    //welcome(client)
     })
     
     command(client, ['ping', 'test', 'try'], message =>{
