@@ -3,7 +3,7 @@ const client = new Discord.Client()
 
 const command = require('./command.js')  
 const welcome = require('./welcome.js')
-//=============================================
+
 client.on('ready', () =>{
     console.log('Nice, Chiriri is online!')
     })
@@ -47,7 +47,7 @@ client.on('ready', () =>{
     })
     command(client, 'status', message =>{
         const content = message.content.replace('%status ', '')
-        // "%status hello world" -> "hello world"
+
 
         client.user.setPresence({
             activity: {
@@ -58,5 +58,5 @@ client.on('ready', () =>{
     })
 })
 
-//=============================================
+
 client.login(process.env.DJS_TOKEN)
